@@ -1,17 +1,14 @@
 from modelos.restaurante import Restaurante
+from modelos.cardapio.prato import Prato
+from modelos.cardapio.bebidas import Bebida
 
 restaurante_praca = Restaurante('praça', 'Gourmet')
-#restaurante_mexicano = Restaurante ('Mexican Food', 'Mexicana')
-#restaurante_japones = Restaurante('japa', 'Japones')
-
-restaurante_praca.avaliar_restaurante('Bruno', 6)
-restaurante_praca.avaliar_restaurante('lais', 1)
-restaurante_praca.avaliar_restaurante('gui', 1)
-
-
+bebida_suco = Bebida('Suco Melancia', 5.0, 'Grande')
+prato_paozinho = Prato('Pãozinho', 2.0, 'O melhor pão da cidade')
 
 def main():
-    Restaurante.listar_restaurantes()
+    print(bebida_suco)
+    print(prato_paozinho)
 
 if __name__ == '__main__':
     main()
